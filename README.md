@@ -45,6 +45,8 @@ Addresses are displayed in a convenient format with support for both shortened a
 Includes a demo mode with a pre-built test chain.
 Supports both interactive-menu execution and direct execution from CMD.
 
+**❗❗ For complete and reliable information, it is recommended to open the console in full screen ❗❗**
+
 # RU
 **🧩 Основное**
 
@@ -85,3 +87,5 @@ TON — анализ через TonAPI с резервным использов�
 Адреса отображаются в удобном формате с поддержкой сокращённого и полного представления.
 Есть демо-режим с заранее построенной тестовой цепочкой.
 Поддерживается запуск как через интерактивное меню, так и напрямую из CMD.
+
+**❗❗ Для полной и достоверной информации рекомендуется открыть консоль на весь экран ❗❗**
