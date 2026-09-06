@@ -15,7 +15,7 @@
        посредник1 <-> посредник2 (и где в паутине второй кошелёк).
 
   Запуск (библиотеки НЕ нужны, Python 3.8+):
-    python wallet_link_analyzer.py                       <- окно-меню
+    python ChainTrace.py.py                       <- окно-меню
     python wallet_link_analyzer.py UQDXVX…               <- семя явно
     python wallet_link_analyzer.py UQDXVX… UQCE…         <- семя+второй
     python wallet_link_analyzer.py --demo --chain ton
