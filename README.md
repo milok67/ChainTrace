@@ -1,6 +1,38 @@
 <img width="1960" height="520" alt="chaintrace-horizontal" src="https://github.com/user-attachments/assets/a8b2bede-5f30-44a9-bba1-f0e77dad84e6" />
 
 > [!IMPORTANT]
+> ## ChainTrace v2.1.0
+> <img width="950" height="405" alt="image" src="https://github.com/user-attachments/assets/092ddafe-272f-4bc4-ad0d-96df0732e943" />
+> <img width="1122" height="658" alt="image" src="https://github.com/user-attachments/assets/08fc4c0f-4791-4d1f-896e-3f839927a793" />
+
+**New**
+- **Real chain search**: finds all paths Wallet 1 → … → Wallet 2 up to 4 hops. Ranked by the weakest link (number of transfers), then by length and volume. Paths through exchanges/services are pushed to the bottom.
+- **Language selection** on startup: Russian / English (or `--lang ru|en`).
+- **Single live window**: a bordered terminal UI redrawn in place, with a progress bar and spinner. Results are shown as pages (Enter / `p` / page number / `q`). A short copyable summary is printed after exit.
+- **HTML diagrams**: `chains.html` with chain diagrams and explorer links, opened automatically.
+- **Single-wallet mode**: who funded the wallet, where it sent funds, and how its counterparties are linked to each other.
+
+**Faster**
+- Counterparty histories load in parallel (4 workers) with a shared rate limiter.
+- Disk cache (1 hour) makes repeat runs almost instant.
+- BTC now uses mempool.space (free, no key).
+- ETH with an Etherscan key now also loads token transfers (USDT etc.).
+
+**Fixed**
+- TON: addresses from the toncenter fallback were in a different format and never matched, so links were lost.
+- ETH: BlockCypher addresses without the `0x` prefix did not match.
+- API failures used to show "0 counterparties" silently; they are now reported clearly.
+- BTC change outputs are no longer counted as transfers.
+
+**Usage**
+    python chaintrace.py                  # interactive: language + addresses
+    python chaintrace.py ADDR1 ADDR2      # find chains between two wallets
+    python chaintrace.py ADDR1            # single-wallet overview
+    python chaintrace.py --demo           # offline demo
+
+
+
+> [!IMPORTANT]
 > ## ChainTrace v1.0.0 
 <img width="813" height="497" alt="image" src="https://github.com/user-attachments/assets/20bad80e-f238-4c35-a5eb-04386535d3a5" />
 
