@@ -2,8 +2,8 @@
 
 > [!IMPORTANT]
 > ## ChainTrace v2.1.0
-> <img width="950" height="405" alt="image" src="https://github.com/user-attachments/assets/092ddafe-272f-4bc4-ad0d-96df0732e943" />
-> <img width="1122" height="658" alt="image" src="https://github.com/user-attachments/assets/08fc4c0f-4791-4d1f-896e-3f839927a793" />
+<img width="950" height="405" alt="image" src="https://github.com/user-attachments/assets/092ddafe-272f-4bc4-ad0d-96df0732e943" />
+<img width="1122" height="658" alt="image" src="https://github.com/user-attachments/assets/08fc4c0f-4791-4d1f-896e-3f839927a793" />
 
 **New**
 - **Real chain search**: finds all paths Wallet 1 → … → Wallet 2 up to 4 hops. Ranked by the weakest link (number of transfers), then by length and volume. Paths through exchanges/services are pushed to the bottom.
